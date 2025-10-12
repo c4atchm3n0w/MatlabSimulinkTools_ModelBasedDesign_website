@@ -59,7 +59,7 @@ jobs:
       - name: Upload static files as artifact
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         id: deployment
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./public
 
